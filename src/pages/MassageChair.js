@@ -1,16 +1,23 @@
 import React from 'react';
 
-const Introduce = () => {
+const MassageChair = () => {
   return (
     <div className="w-full h-full bg-[#FDF3FA]">
       <div className='py-20'>
-        <div className="">
-          <div className="font-extrabold text-2xl sm:text-4xl lg:text-5xl text-main opacity-65 text-center">
-            Flash Sale Mùa Vu Lan
-          </div>
-          <p className='mt-6 text-center'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin <br /> lobortis sed sapien in pretium. Donec tincidunt, quam.
-          </p>
+      <div className="">
+            <div className="flex items-center text-center justify-center space-x-2">
+                <img
+                    src="best-seller.png"
+                    className="h-12 w-12 sm:h-16 sm:w-16"
+                    alt="logo category"
+                />
+                <p className="text-2xl sm:text-4xl lg:text-5xl font-bold text-main opacity-80 leading-snug">
+                    Ghế Massage ABCSport
+                </p>
+            </div>
+            <p className='mt-6 text-center'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin <br /> lobortis sed sapien in pretium. Donec tincidunt, quam.
+            </p>
         </div>
         <div className="mx-[10%] mt-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -76,4 +83,4 @@ const Introduce = () => {
   );
 };
 
-export default Introduce;
+export default MassageChair;
