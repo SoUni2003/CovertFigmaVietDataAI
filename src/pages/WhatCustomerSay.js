@@ -19,8 +19,8 @@ const WhatCustomerSay = () => {
                     </div>
                 </div>
                 {/* Icons container at the bottom */}
-                <div className="flex justify-center items-center space-x-4">
-                    <ArrowLeftOutlined   className="text-white text-lg" />
+                <div className="flex justify-center items-center space-x-4 w-48">
+                    <ArrowLeftOutlined   className="text-white text-lg px-6 " />
                     <ArrowRightOutlined  className="text-white text-lg" />
                 </div>
             </div>
