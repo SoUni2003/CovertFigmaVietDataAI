@@ -7,7 +7,7 @@ const WhatCustomerSay = () => {
                 <div className="items-center">
                     <div>
                         <p className="text-4xl text-white font-black tracking-wider">
-                            Khách hàng nói gì <br /> về ABCSport
+                            Khách hàng nói gì về ABCSport
                         </p>
                     </div>
                     <div className="mt-10 lg:w-[70%]">

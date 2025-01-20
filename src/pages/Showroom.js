@@ -89,11 +89,11 @@ const Showroom = () => {
                     <div className="text-gray-800">  
                         <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-main opacity-80 leading-snug">120 Showroom <br /> Toàn Quốc</h2>  
 
-                        <div className="flex space-x-4 mb-4 border-b-2 border-gray-300 mt-6 overflow-x-auto">
+                        <div className="flex space-x-2 mb-4 border-b-2 border-gray-300 mt-6 overflow-x-auto">
                             {Object.keys(showroomData).map((tab) => (
                                 <button
                                     key={tab}
-                                    className={`py-2 px-4 text-base font-semibold ${activeTab === tab ? 'text-orange-500 border-b-2 border-orange-500' : 'text-gray-600 hover:text-orange-500 transition duration-300'} whitespace-nowrap`}
+                                    className={`py-2 px-3 text-base font-semibold ${activeTab === tab ? 'text-orange-500 border-b-2 border-orange-500' : 'text-gray-600 hover:text-orange-500 transition duration-300'} whitespace-nowrap`}
                                     onClick={() => setActiveTab(tab)}
                                 >
                                     {tab}
