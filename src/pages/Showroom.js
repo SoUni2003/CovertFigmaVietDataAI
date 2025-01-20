@@ -20,25 +20,26 @@ const Showroom = () => {
             { name: 'ABCSport Hồ Chí Minh', address: '1 Nguyễn Huệ, Quận 1, Hồ Chí Minh', phone: '(028) 1234 5678' },  
         ],  
         'Miền Bắc': [  
-            { name: 'ABCSport Hồ Chí Minh', address: '1 Nguyễn Huệ, Quận 1, Hồ Chí Minh', phone: '(028) 1234 5678' },  
+            { name: 'Miền Bắc', address: '1 Nguyễn Huệ, Quận 1, Hồ Chí Minh', phone: '(028) 1234 5678' },  
         ],  
         'An Giang': [  
-            { name: 'ABCSport Hồ Chí Minh', address: '1 Nguyễn Huệ, Quận 1, Hồ Chí Minh', phone: '(028) 1234 5678' },  
+            { name: 'An Giang', address: '1 Nguyễn Huệ, Quận 1, Hồ Chí Minh', phone: '(028) 1234 5678' },  
         ],  
         'Miền Nam': [  
-            { name: 'ABCSport Hồ Chí Minh', address: '1 Nguyễn Huệ, Quận 1, Hồ Chí Minh', phone: '(028) 1234 5678' },  
-        ],  
+            { name: 'Miền Nam', address: '1 Nguyễn Huệ, Quận 1, Hồ Chí Minh', phone: '(028) 1234 5678' },  
+        ],
+          
     };  
 
     const handleScroll = () => {  
         const listHeight = listRef.current.scrollHeight - listRef.current.clientHeight;  
         const percentage = listRef.current.scrollTop / listHeight;  
-        setScrollPosition(percentage * (showroomData[activeTab].length - 1)); // Update scroll position  
+        setScrollPosition(percentage * (showroomData[activeTab].length - 1));
     };  
 
     const handleDragStart = (e) => {  
         setIsDragging(true);  
-        e.preventDefault(); // Prevent default behavior for the drag event  
+        e.preventDefault();
     };  
 
     const handleDrag = (e) => {  
@@ -48,7 +49,6 @@ const Showroom = () => {
             const offsetY = e.clientY - rect.top;  
             const percentage = Math.max(0, Math.min(1, offsetY / rect.height));  
 
-            // Set list scroll top based on drag  
             const listHeight = listRef.current.scrollHeight - listRef.current.clientHeight;  
             listRef.current.scrollTop = percentage * listHeight;  
             setScrollPosition(percentage * (showroomData[activeTab].length - 1));  
@@ -89,18 +89,18 @@ const Showroom = () => {
                     <div className="text-gray-800">  
                         <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-main opacity-80 leading-snug">120 Showroom <br /> Toàn Quốc</h2>  
 
-                        <div className="flex space-x-4 mb-4 border-b-2 border-gray-300 mt-6">  
-                            {Object.keys(showroomData).map((tab) => (  
-                                <button  
-                                    key={tab}  
-                                    className={`py-2 px-2 text-base font-semibold ${activeTab === tab ? 'text-orange-500 border-b-2 border-orange-500' : 'text-gray-600 hover:text-orange-500 transition duration-300'}`}  
-                                    onClick={() => setActiveTab(tab)}  
-                                >  
-                                    {tab}  
-                                </button>  
-                            ))}  
-                        </div>  
-
+                        <div className="flex space-x-4 mb-4 border-b-2 border-gray-300 mt-6 overflow-x-auto">
+                            {Object.keys(showroomData).map((tab) => (
+                                <button
+                                    key={tab}
+                                    className={`py-2 px-4 text-base font-semibold ${activeTab === tab ? 'text-orange-500 border-b-2 border-orange-500' : 'text-gray-600 hover:text-orange-500 transition duration-300'} whitespace-nowrap`}
+                                    onClick={() => setActiveTab(tab)}
+                                >
+                                    {tab}
+                                </button>
+                            ))}
+                        </div>
+  
                         <div className="relative max-h-[368px] overflow-hidden p-4 flex" onWheel={handleWheel}>  
                             <div  
                                 ref={listRef}  
@@ -139,8 +139,8 @@ const Showroom = () => {
                         </div>  
 
                         <button className="mt-4 bg-main uppercase rounded-3xl px-6 sm:px-10 py-2 sm:py-3 hover:bg-white hover:text-main text-white flex items-center justify-center text-sm sm:text-base">
-                         Xem tất cả
-                        <ArrowRightOutlined className="ml-3" />
+                            Xem tất cả
+                            <ArrowRightOutlined className="ml-3" />
                         </button>
                     </div>  
                     
@@ -150,4 +150,4 @@ const Showroom = () => {
     );  
 };  
 
-export default Showroom;
+export default Showroom; 
