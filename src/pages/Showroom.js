@@ -147,7 +147,7 @@ const Showroom = () => {
                         <button className="mt-4 bg-main uppercase rounded-3xl px-6 sm:px-10 py-2 sm:py-3 hover:bg-white hover:text-main text-white flex items-center justify-center text-sm sm:text-base">
                          Xem tất cả
                         <ArrowRightOutlined className="ml-3" />
-            </button>
+                        </button>
                     </div>  
                 </div>  
             </div>  

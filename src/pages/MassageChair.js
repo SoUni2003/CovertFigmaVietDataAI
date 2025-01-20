@@ -23,7 +23,7 @@ const MassageChair = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="border p-4 rounded-lg relative bg-white">
               <div className="w-full h-[300px] oject-cover mb-4 rounded-t-lg">
-                <img src="flash1.png" alt="Product Image" className="w-full h-full object-cover" />
+                <img src='flash1.png' alt="Product Image" className="w-full h-full object-cover" />
               </div>
               <div className="absolute top-4 left-4 bg-main text-white text-xs px-2 py-1 rounded-sm">
                 -30%

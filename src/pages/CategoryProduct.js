@@ -34,7 +34,6 @@ const CategoryProduct = () => {
         {/* Swiper Section */}
         <div className="mx-4 sm:mx-10 lg:mx-[10%] mt-10">
             <Swiper
-            navigation
             pagination={{ clickable: true }}
             spaceBetween={20}
             slidesPerView={1.5}
@@ -68,7 +67,7 @@ const CategoryProduct = () => {
 
         <div className="flex justify-center mt-6 sm:mt-10">
             <button className="bg-main uppercase rounded-3xl px-6 sm:px-10 py-2 sm:py-3 hover:bg-white hover:text-main text-white flex items-center justify-center text-sm sm:text-base">
-              Xem tất cả
+            Xem tất cả
             <ArrowRightOutlined className="ml-3" />
             </button>
         </div>

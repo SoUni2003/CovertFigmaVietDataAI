@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        main: '#FA5A0A'
+        main: '#FA5A0A',
+        secondary: '#FDF5F3'
       },
       backgroundImage: {
         'carousel': "url('../public/carousel.png')",
