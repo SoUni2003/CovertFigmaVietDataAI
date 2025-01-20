@@ -6,7 +6,7 @@ const Menu = ({ isMobile }) => {
     <div
       className={`${
         isMobile
-          ? "flex flex-col space-y-6 p-6 text-xl"
+          ? "flex flex-col space-y-6 p-6 text-xl max-w-full"
           : "flex items-center justify-between w-full"
       }`}
     >

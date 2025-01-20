@@ -35,7 +35,7 @@ const NewAndEvent = () => {
     return (
         <div className="relative max-w-[80%] mx-auto">
             <div className='py-4'>
-                <p className="text-2xl sm:text-4xl lg:text-5xl font-bold text-main opacity-80 leading-snug text-center py-3">
+                <p className="text-2xl sm:text-4xl lg:text-5xl font-bold text-main opacity-65 leading-snug text-center py-3">
                     Tin Tức & Sự Kiện
                 </p>
 
@@ -65,7 +65,7 @@ const NewAndEvent = () => {
                 >
                     {items.map((item) => (
                         <SwiperSlide key={item.id}>
-                            <div className="bg-white shadow-xl rounded-lg flex flex-col h-full">
+                            <div className="bg-white shadow-xl flex flex-col h-full">
                                 <img
                                     src={item.img}
                                     alt="new and event"
@@ -73,7 +73,7 @@ const NewAndEvent = () => {
                                 />
                                 <div className="p-3 flex-grow">
                                     <h3 className="text-xl font-semibold">{item.title}</h3>
-                                    <p className="text-[#6A7682] text-xs font-bold">
+                                    <p className="text-[#6A7682] text-xs font-bold opacity-65">
                                         28, Aug, 2025, 2026 19:55
                                     </p>
                                     <p className="text-[#6A7682] text-sm">
@@ -88,13 +88,13 @@ const NewAndEvent = () => {
                 {/* Navigation Buttons */}
                 <button
                     onClick={handlePrev}
-                    className="border border-1 absolute w-12 h-12 left-[-50px] top-[50%] transform -translate-y-1/2 bg-white shadow-lg rounded-full p-3 text-main hover:bg-main hover:text-white transition"
+                    className="border border-1 absolute w-12 h-12 left-[-60px] top-[50%] transform -translate-y-1/2 bg-white shadow-lg rounded-full p-3 text-main hover:bg-main hover:text-white transition"
                 >
                     <LeftOutlined />
                 </button>
                 <button
                     onClick={handleNext}
-                    className="border border-1 absolute w-12 h-12 right-[-50px] top-[50%] transform -translate-y-1/2 bg-white shadow-lg rounded-full p-3 text-main hover:bg-main hover:text-white transition"
+                    className="border border-1 absolute w-12 h-12 right-[-60px] top-[50%] transform -translate-y-1/2 bg-white shadow-lg rounded-full p-3 text-main hover:bg-main hover:text-white transition"
                 >
                     <RightOutlined />
                 </button>

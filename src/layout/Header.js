@@ -7,18 +7,15 @@ function Header() {
 
   return (
     <div>
-      {/* Header Top */}
-      <div className="h-[116px] bg-main">
+      <div className="h-[116px] bg-main z-50 relative">
         <div className="mx-4 sm:mx-[10%] flex items-center justify-between h-full">
-          {/* Logo */}
           <img
             className="block w-[120px] sm:w-[147px] h-auto object-cover"
             src="/logo.png"
             alt="Company Logo"
           />
 
-          {/* Search Bar */}
-          <div className="relative w-full sm:w-[454px] hidden sm:block">
+          <div className="relative w-full lg:w-[454px] hidden lg:block">
             <input
               className="w-full h-[26px] pl-[16px] pr-[40px] py-[26px] rounded-lg border border-white placeholder-opacity-40"
               placeholder="Từ khóa tìm kiếm..."
@@ -26,14 +23,12 @@ function Header() {
             <SearchOutlined className="absolute top-1/2 right-4 transform -translate-y-1/2 w-5 h-5" />
           </div>
 
-          {/* User and Cart Section */}
           <div className="flex items-center space-x-4">
             <UserOutlined className="w-[30px] h-[30px] sm:w-[35px] sm:h-[36px] text-white" />
             <ShoppingCartOutlined className="w-6 h-6 sm:w-6 sm:h-6 text-white rounded-full bg-white bg-opacity-20 p-[5px] hover:bg-opacity-40" />
           </div>
 
-          {/* Mobile Menu Icon */}
-          <div className="sm:hidden">
+          <div className="lg:hidden">
             {isMenuOpen ? (
               <CloseOutlined
                 className="text-white text-2xl cursor-pointer"
@@ -49,17 +44,22 @@ function Header() {
         </div>
       </div>
 
-      {/* Header Bottom */}
+      {isMenuOpen && (
+        <div
+          onClick={() => setIsMenuOpen(false)}
+          className="fixed inset-0 bg-black bg-opacity-50 z-40"
+          style={{ top: '116px' }}
+        />
+      )}
+
       <div className="h-[56px] bg-black flex items-center">
-        <div className="mx-4 sm:mx-[10%] text-white w-full">
-          {/* Desktop Menu */}
-          <div className="hidden sm:block">
+        <div className="mx-4 lg:mx-[10%] text-white w-full">
+          <div className="hidden lg:block">
             <Menu isMobile={false} />
           </div>
 
-          {/* Mobile Menu */}
           {isMenuOpen && (
-            <div className="absolute top-[172px] left-0 w-full bg-black z-50">
+            <div className="absolute top-[116px] left-0 w-full bg-black z-50 lg:hidden">
               <Menu isMobile={true} />
             </div>
           )}

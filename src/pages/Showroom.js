@@ -80,18 +80,15 @@ const Showroom = () => {
     return (  
         <div className="bg-gray-100">  
             <div className="mx-[10%] py-20">  
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">  
-                    {/* Left Column */}  
-                    <div className="flex flex-col space-y-5">  
-                        <img src="showroom1.png" alt="Showroom 1" className="w-full h-80 object-contain" />  
-                        <img src="showroom2.png" alt="Showroom 2" className="w-full h-80 object-contain" />  
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">  
+                    <div className="flex-col justify-center items-center mt-20 space-y-6 hidden lg:block">  
+                        <img src="showroom1.png" alt="Showroom 1" className="w-full h-60 object-contain" />  
+                        <img src="showroom2.png" alt="Showroom 2" className="w-full h-60 object-contain" />  
                     </div>  
 
-                    {/* Right Column */}  
                     <div className="text-gray-800">  
                         <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-main opacity-80 leading-snug">120 Showroom <br /> Toàn Quốc</h2>  
 
-                        {/* Tabs */}  
                         <div className="flex space-x-4 mb-4 border-b-2 border-gray-300 mt-6">  
                             {Object.keys(showroomData).map((tab) => (  
                                 <button  
@@ -104,7 +101,6 @@ const Showroom = () => {
                             ))}  
                         </div>  
 
-                        {/* Showroom List with Scroll */}  
                         <div className="relative max-h-[368px] overflow-hidden p-4 flex" onWheel={handleWheel}>  
                             <div  
                                 ref={listRef}  
@@ -122,10 +118,8 @@ const Showroom = () => {
                                 ))}  
                             </div>  
 
-                            {/* Gradient Overlay */}  
                             <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-gray-100 via-gray-100 to-transparent pointer-events-none" />  
 
-                            {/* Custom Scroll Bar */}  
                             <div  
                                 className="absolute right-2 top-0 bottom-0 flex items-center cursor-pointer"  
                                 onMouseDown={handleDragStart}  
@@ -149,6 +143,7 @@ const Showroom = () => {
                         <ArrowRightOutlined className="ml-3" />
                         </button>
                     </div>  
+                    
                 </div>  
             </div>  
         </div>  

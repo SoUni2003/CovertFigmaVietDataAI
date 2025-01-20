@@ -5,5 +5,6 @@ import MassageChair from './MassageChair';
 import WhatCustomerSay from './WhatCustomerSay';
 import Showroom from './Showroom';
 import NewAndEvent from './NewAndEvent';
+import Contact from './Contact';
 
-export { Introduce, Carousel, CategoryProduct, MassageChair, WhatCustomerSay, Showroom, NewAndEvent };
+export { Introduce, Carousel, CategoryProduct, MassageChair, WhatCustomerSay, Showroom, NewAndEvent, Contact };

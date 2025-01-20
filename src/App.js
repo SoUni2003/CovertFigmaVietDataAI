@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './layout/Header';
-import { Introduce, Carousel, CategoryProduct, MassageChair, WhatCustomerSay, Showroom, NewAndEvent } from './pages';
+import Footer from './layout/Footer';
+import { Introduce, Carousel, CategoryProduct, MassageChair, WhatCustomerSay, Showroom, NewAndEvent, Contact } from './pages';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <WhatCustomerSay />
       <Showroom />
       <NewAndEvent />
+      <Contact />
+      <Footer />
     </div>
   );
 }
