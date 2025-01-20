@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Prerequisites
+Before running the project, make sure you have Yarn installed. If you don't have it installed, you can install it by running the following command:
+
+### `npm install --global yarn`
+
+## Installation
+In the project directory, run the following command to install the required dependencies:
+
+### `yarn install`
+
 ## Available Scripts
 
 In the project directory, you can run:
