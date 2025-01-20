@@ -1,6 +1,5 @@
 # Getting Started with ConvertFigma by VietData.AI 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Prerequisites
 Before running the project, make sure you have Yarn installed. If you don't have it installed, you can install it by running the following command:
